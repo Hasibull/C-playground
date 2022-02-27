@@ -1,2 +1,2 @@
 # Practicing C programming
-- using various interested problem.
+- using various interesting problem.
