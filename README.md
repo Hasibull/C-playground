@@ -1,2 +1,3 @@
 # Practicing C programming
-- using various interesting problem.
+- interesting problem(guessing the output).
+- solving problem.
