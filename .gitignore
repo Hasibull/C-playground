@@ -1,2 +1,7 @@
 *.exe
 *.o
+*.py
+*.js
+*.java
+*.cpp
+*.class
