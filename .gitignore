@@ -6,3 +6,5 @@
 *.cpp
 *.m
 *.class
+*.html
+*.css
