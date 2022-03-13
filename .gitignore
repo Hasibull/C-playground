@@ -4,4 +4,8 @@
 *.js
 *.java
 *.cpp
+*.m
 *.class
+*.html
+*.css
+*.txt
