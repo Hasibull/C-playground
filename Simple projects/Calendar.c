@@ -1,4 +1,6 @@
+#include<conio.h>
 #include<stdio.h>
+#include<windows.h>
 
 int getFirstDayOfYear(int year) {
     int day = (year * 365 + ((year - 1) / 4) - ((year - 1) / 100) + ((year - 1) / 400)) % 7;
@@ -8,6 +10,7 @@ int getFirstDayOfYear(int year) {
 
 int main()
 {
+    system("color e");
     char *months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
     int daysInMonth[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     int year;
@@ -29,7 +32,12 @@ int main()
     
     for(int i=0; i<12; i++) {
         printf("\n\n\n------------------- %s --------------------\n", months[i]);
-        printf("\n   Sun   Mon   Tue   Wed   Thu   Fri   Sat\n\n");
+        printf("\n   Sun   Mon   Tue   Wed   Thu   ");
+        HANDLE hc = GetStdHandle(STD_OUTPUT_HANDLE);
+        SetConsoleTextAttribute(hc, 0xfc);
+        printf("Fri   Sat");
+        SetConsoleTextAttribute(hc, 0x0E);
+        printf("\n\n");
 
         for(int spaceCount=1; spaceCount<=weekDay; spaceCount++) {
             printf("      ");
